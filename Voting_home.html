@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="home_style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4K0peYMlFZSHhXwXIopWUt2pRGrT5RmTtYQ&usqp=CAU"
+    />
+    <title>Voting | Home</title>
+  </head>
+  <body>
+    <header>
+      <b>Online Voting System</b>
+    </header>
+    <h1>Registration</h1>
+    <div class="formarea">
+      <form action="Voting_page.html">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="number"
+          name="ph_number"
+          id="ph_number"
+          placeholder="Mobile"
+          required
+        />
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="c_password"
+          id="c_password"
+          placeholder="Confirm Password"
+          required
+        />
+        <br />
+        <textarea
+          name="address"
+          id="address"
+          cols="30"
+          rows="2"
+          placeholder="Address"
+          required
+        ></textarea>
+        <br />
+        <fieldset>
+          <legend>Upload image</legend>
+          <input type="file" name="image">
+        </fieldset>
+        <fieldset>
+          <legend>Role</legend>
+          <!-- <input type="radio" id="voter" name="role" value="Voter" />   -->
+          <!-- <label for="voter">Voter</label> -->
+           
+          <!-- <input type="radio" id="candidate" name="role" value="Candidate" />   -->
+          <!-- <label for="candidate">Candidate</label>   -->
+          <label for="role">Voter</label>
+          <input type="checkbox" name="r" id="role" checked>
+        </fieldset>
+        <input type="submit" value="Register" onclick="myFunction()"/>
+      </form>
+    </div>
+
+    <div class="prereg">
+      <span>Already user? <a href="welcome-login_page.html">login here</a></span>
+    </div>
+    <script src="Voting_home.js"></script>
+  </body>
+</html>

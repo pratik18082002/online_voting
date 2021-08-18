@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="welcome-login_page.css" />
+        <meta charset="UTF-8" />
+        <title>E-voting Portal</title>
+    </head>
+    <body onload="checkCookie()">
+    <div class="container">
+        <!--Data or Content-->
+        <div class="box-1">
+            <div class="content-holder">
+                <h2>E-Voting Portal !</h2>
+                <p>Cast your important vote here..  </p>
+                <button class="button-1" onclick="window.location.href='Voting_home.html'">Sign up</button>
+            </div>
+        </div>
+
+        
+        <!--Forms-->
+        <div class="box-2">
+            <div class="login-form-container">
+                <form action="Voting_page.html">
+                <h1>Login Form</h1>
+                <input type="text" placeholder="Username" class="input-field" required>
+                <br><br>
+                <input type="password" placeholder="Password" class="input-field" required>
+                <br><br>
+                <!-- <button class="login-button" type="button" onclick="window.location.href='Voting_page.html'">Login</button> -->
+                <input type="submit" value="Login" class="login-button">
+            </form>
+            </div>
+        </div>
+        <script src="welcome-login_page.js"></script>
+    </body>
+</html>
